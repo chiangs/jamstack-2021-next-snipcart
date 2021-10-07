@@ -45,8 +45,9 @@ export default function Home() {
 
                 <p className={styles.cart}>
                     <FaShoppingCart />
-                    <span>$0.00</span>
-                    <Button>View Cart</Button>
+                    <span className='snipcart-items-count'></span>&nbsp;/&nbsp;
+                    <span className='snipcart-total-price'></span>
+                    <Button className='snipcart-checkout'>View Cart</Button>
                 </p>
 
                 <h2 className='sr-only'>Available Cards</h2>
