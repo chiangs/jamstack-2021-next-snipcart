@@ -18,10 +18,16 @@ export default function Home() {
     return (
         <Layout>
             <Head>
-                <title>Hyper Bros Trading</title>
+                <title>Mechanical Bros Trading</title>
                 <meta
                     name='description'
                     content='Your favorite trading cards delivered!'
+                />
+                <link rel='preconnect' href='https://app.snipcart.com' />
+                <link rel='preconnect' href='https://cdn.snipcart.com' />
+                <link
+                    rel='stylesheet'
+                    href='https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css'
                 />
             </Head>
 
@@ -67,13 +73,34 @@ export default function Home() {
                                     </a>
                                 </Link>
                                 <p>
-                                    <Button>Add to Cart</Button>
+                                    <Button
+                                        className='snipcart-add-item'
+                                        data-item-id={product.id}
+                                        data-item-price={product.price}
+                                        data-item-url={`products/${product.id}`}
+                                        data-item-description={
+                                            product.productTitle
+                                        }
+                                        data-item-image={product.image}
+                                        data-item-name={product.title}
+                                    >
+                                        Add to Cart
+                                    </Button>
                                 </p>
                             </li>
                         );
                     })}
                 </ul>
             </Container>
+            <script
+                async
+                src='https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js'
+            ></script>
+            <div
+                hidden
+                id='snipcart'
+                data-api-key={process.env.NEXT_PUBLIC_SNIPCART_API_KEY}
+            ></div>
         </Layout>
     );
 }
