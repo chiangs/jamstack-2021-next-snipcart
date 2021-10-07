@@ -38,10 +38,10 @@ export default function Home() {
         </div> */}
 
                 <p className={styles.cart}>
-                    <FaShoppingCart />
-                    <span className='snipcart-items-count'></span>&nbsp;/&nbsp;
-                    <span className='snipcart-total-price'></span>
-                    <Button className='snipcart-checkout'>View Cart</Button>
+                    {/* <FaShoppingCart /> */}
+                    {/* <span className='snipcart-items-count'></span>&nbsp;/&nbsp;
+                    <span className='snipcart-total-price'></span> */}
+                    {/* <Button className='snipcart-checkout'>View Cart</Button> */}
                 </p>
 
                 <h2 className='sr-only'>Available Cards</h2>
