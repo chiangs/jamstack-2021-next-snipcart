@@ -1,6 +1,6 @@
-# Hyper Bros Trading Workshop Starter
+# Mechanical Bros Trading Workshop Starter
 
-Hey there! This is a starter project for my workshop [](https://github.com/colbyfayock/hyper-bros-trading-workshop). If you're just browsing around, learn more about my workshop over at: https://github.com/colbyfayock/hyper-bros-trading-workshop
+Hey there! This is coursework for Colby Fayock's online course to integrate NextJS with Snipcart and Netlify.
 
 ## Getting Started
 
