@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Templates</title>
+    </head>
+
+    <body>
+        <!-- Ref https://docs.snipcart.com/v3/themes/default/reference for default templates to override -->
+        <div id="snipcart-templates">
+            <!-- #region Cart Summary -->
+            <!-- <item-line>
+                <li class="snipcart__item__line snipcart__box">
+                    <div class="snipcart__item__line__product">
+                        <div class="snipcart__item__line__header">
+                            <h2 class="snipcart__item__line__header__title">
+                                {{ item.name }}
+                            </h2>
+
+                            <item-quantity
+                                class="snipcart__item__line__quantity"
+                                v-if="!adding"
+                            ></item-quantity>
+                            <div class="snipcart__item__line__header__actions">
+                                <remove-item-action
+                                    class="snipcart__button--icon"
+                                >
+                                    <icon
+                                        name="trash"
+                                        class="icon--red"
+                                        alt="item.remove_item"
+                                    ></icon>
+                                </remove-item-action>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </item-line> -->
+            <!-- #endregion Cart summary -->
+
+            <!-- #region Checkout form -->
+            <address-fields section="top">
+                <div>
+                    <snipcart-label for="phone"> Phone number </snipcart-label>
+                    <snipcart-input name="phone"> </snipcart-input>
+                </div>
+            </address-fields>
+            <!-- #endrgion checkout form -->
+        </div>
+    </body>
+</html>
