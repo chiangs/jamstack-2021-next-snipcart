@@ -23,12 +23,6 @@ export default function Home() {
                     name='description'
                     content='Your favorite trading cards delivered!'
                 />
-                <link rel='preconnect' href='https://app.snipcart.com' />
-                <link rel='preconnect' href='https://cdn.snipcart.com' />
-                <link
-                    rel='stylesheet'
-                    href='https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css'
-                />
             </Head>
 
             <Container>
@@ -93,15 +87,6 @@ export default function Home() {
                     })}
                 </ul>
             </Container>
-            <script
-                async
-                src='https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js'
-            ></script>
-            <div
-                hidden
-                id='snipcart'
-                data-api-key={process.env.NEXT_PUBLIC_SNIPCART_API_KEY}
-            ></div>
         </Layout>
     );
 }
